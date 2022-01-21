@@ -1,20 +1,28 @@
 public class LineComparison{
 	static int x1,x2,y1,y2;
-	static double line1_Length;
+	static int x3,x4,y4,y3;
+
+	static double line1Length, line2Length;
 	
 	public static void main (String[] args){
-		
-		System.out.println("Welcome to Line Comparison!!!");	
+			
 		x1 = 4;
 		y1 = 5;
 		x2 = 5;
 		y2 = 6;
+		x3 = 4;
+		y3 = 5;
+		x4 = 5;
+		y4 = 6;
 	
-		line1_Length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-		System.out.println("line1 length:" + line1_Length);
+		line1Length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+		System.out.println("line1 length:" + line1Length);
+		line2Length = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
+		System.out.println("line2 length:" + line2Length);
+		if( line1Length == line2Length )
+			System.out.println("Both lines are equal");
+		else
+			System.out.println("Both lines are not equal");
 		
-
 	}
 }
-
-
